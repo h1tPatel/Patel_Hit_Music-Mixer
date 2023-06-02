@@ -1,4 +1,6 @@
 # Music Mixer Web Page
+## ![music-mixer](https://github.com/h1tPatel/Patel_Hit_Patel_Harsh_Music-Mixer/assets/121983566/18c3b5f1-f017-46df-8937-1c73cb21b786)
+
 
 This project is a Music Mixer web page that allows users to mix audio tracks using drag and drop functionality. It is built using JavaScript, CSS, and HTML, and is designed to provide an intuitive and interactive user experience.
 
