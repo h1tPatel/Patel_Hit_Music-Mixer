@@ -36,4 +36,5 @@ Contributions are welcome! If you encounter any issues or have suggestions for i
 ## Contact
 
 For any inquiries or questions, please contact h_patel172632@fanshaweonline.ca AND h_patel161481@fanshweonline.ca . 
-
+## License 
+This project is licensed under the [MIT License](LICENSE).
