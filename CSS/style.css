@@ -1,4 +1,18 @@
 *{
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Geologica', sans-serif;
+    color: white;
+    background-image: url(../image/photo3.jpg);
+    background-size: cover;
+}
+
+header
+{
+    text-align: center;
+    font-size: large;
+}
     margin: 30;
     padding: 10;
     font-family:Georgia, 'Times New Roman', Times, serif;
