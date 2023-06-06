@@ -1,26 +1,10 @@
-/* 
-    CSS Guide 
-
-    1.  General Grid Styles
-        Utility Classes
-    2.  Mobile Grid
-    3.  Tablet Grid
-    4.  Desktop Grid
-    5.  XL Grid
-
- */
-
-
- /* 1. ---General Grid Styles--- */
-
- html {
+html {
     box-sizing: border-box; 
   }
   
   *, *::before, *::after {
     box-sizing: inherit; 
   }
-  /* ---Utility Classes--- */
   
   .hidden {
      display: none;
@@ -36,14 +20,6 @@
      margin-bottom:10px;
    }
   
-  /* 2. ---Mobile Library Grid Styles--- */
-  
-  /*---We do not use media queries for mobile or Justin will find us...*/
-  
-  /*body {
-    background-color: #000;
-  }*/
-  
   .full-width-grid-con {
     display: grid;
     grid-template-columns: 1fr minmax(0, 767px) 1fr;
@@ -57,7 +33,6 @@
     margin: 0px auto;
     padding-left: 15px;
     padding-right: 15px;
-    /*padding: 0px 15px 0px 15px;*/
   }
   
   .col-span-auto {
@@ -83,8 +58,6 @@
   .col-span-full {
     grid-column: 1 / -1;
   }
-  
-  /*-- Using grid column start --*/
   
   .col-start-1 {
     grid-column-start: 1;
@@ -146,14 +119,7 @@
     display: none;
   }
   
-  
-  /* 3. ---Tablet Library Grid Styles--- */
-  
   @media screen and (min-width: 768px) {
-  
-    /*body {
-      background: #ff0000;
-    }*/
   
     .full-width-grid-con {
       display: grid;
@@ -165,7 +131,6 @@
       grid-template-columns: repeat(12, minmax(0, 1fr));
       grid-column-gap: 30px;
       max-width: 1199px;
-      /*--remove below when you fully understand the passing of rules and values(this rule only)--*/
       margin: 0px auto;
       padding-left: 15px;
       padding-right: 15px;
@@ -222,8 +187,6 @@
     .m-col-span-full {
       grid-column: 1 / -1;
     }
-  
-    /*-- Using grid column start --*/
   
   .m-col-start-1 {
     grid-column-start: 1;
@@ -351,14 +314,7 @@
   
   }
   
-  /* 4. ---Desktop Library Grid Styles--- */
-  
   @media screen and (min-width: 1200px) {
-  
-      /*body {
-        background: #00ff48;
-      }*/
-  
       .full-width-grid-con {
         display: grid;
         grid-template-columns: 1fr minmax(0, 1919px) 1fr;
@@ -554,13 +510,8 @@
   
   }
   
-  /* 5. ---X-Large Desktop Library Grid Styles--- */
   
   @media screen and (min-width: 1920px) {
-  
-      /*body {
-        background: #0400e0;
-      }*/
   
       .full-width-grid-con {
         display: grid;
@@ -628,8 +579,6 @@
       .xl-col-span-full {
         grid-column: 1 / -1;
       }
-    
-      /*-- Using grid column start --*/
     
     .xl-col-start-1 {
       grid-column-start: 1;
