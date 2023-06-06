@@ -1,3 +1,4 @@
+/* To organize the beats within the music mixer, we'll define a grid or timeline. This grid will represent the placement of the beats in the interface. We need to determine how beats should be aligned and synchronized to specific positions on the grid. This ensures that the beats play in sync with each other and the overall music. */
 html {
     box-sizing: border-box; 
   }
