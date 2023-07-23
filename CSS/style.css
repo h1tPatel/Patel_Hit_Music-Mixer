@@ -4,7 +4,7 @@
     padding: 0;
     font-family: 'Geologica', sans-serif;
     color: white;
-    background-image: url(../image/photo2.jpg);
+    background-image: url(../image/photo5.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -12,7 +12,11 @@
 {
     display: none;
 }
-
+.name-logo
+{
+    margin-left: 500px;   
+    padding-top: 15px;
+}
 object
 {
     height: 100px;
@@ -21,4 +25,16 @@ object
     width: 30%;
     text-align: center;
     font-size: large;
+}
+#music-icon
+{
+    background: none;
+   height: 100px;
+   width: 100px;
+}
+
+.no-background
+{
+    background: none;
+    margin: 20px;
 }
