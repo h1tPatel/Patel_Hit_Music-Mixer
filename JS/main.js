@@ -1,6 +1,4 @@
 console.log("JS file is connected")
-
-
 // Add event listeners to make the music files draggable
 const musicFiles = document.querySelectorAll('.music-file');
 musicFiles.forEach((musicFile) => {
