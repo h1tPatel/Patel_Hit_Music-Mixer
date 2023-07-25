@@ -18,5 +18,12 @@ img {
     width: 100px;
 }
 #reset-button {
-    height: 100px;
+   background-color: red;
+}
+.drop-here {
+text-align: center;
+}
+.drop-here p {
+    padding-top: 10px;
+    opacity: 60%;
 }

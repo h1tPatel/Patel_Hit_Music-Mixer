@@ -61,11 +61,24 @@ musicFiles.forEach((musicFile) => {
     musicFilesContainer.appendChild(musicFile); // Move the music files back to the Music Files section
 });
 
+// function resetPositions() {
+//     musicFiles.forEach((musicFile, index) => {
+//         const { x, y } = initialPositions[index];
+//         musicFile.style.left = x + 'px';
+//         musicFile.style.top = y + 'px';
+//         musicFilesContainer.appendChild(musicFile); // Move the music files back to the Music Files section
+//     });
+// }
 function resetPositions() {
     musicFiles.forEach((musicFile, index) => {
         const { x, y } = initialPositions[index];
         musicFile.style.left = x + 'px';
         musicFile.style.top = y + 'px';
         musicFilesContainer.appendChild(musicFile); // Move the music files back to the Music Files section
+        
+        // Pause the music if it's currently playing
+        const audio = musicFile.querySelector('audio');
+        audio.pause();
+        audio.currentTime = 0; // Reset the audio playback position to the beginning
     });
 }
