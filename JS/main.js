@@ -61,14 +61,7 @@ musicFiles.forEach((musicFile) => {
     musicFilesContainer.appendChild(musicFile); // Move the music files back to the Music Files section
 });
 
-// function resetPositions() {
-//     musicFiles.forEach((musicFile, index) => {
-//         const { x, y } = initialPositions[index];
-//         musicFile.style.left = x + 'px';
-//         musicFile.style.top = y + 'px';
-//         musicFilesContainer.appendChild(musicFile); // Move the music files back to the Music Files section
-//     });
-// }
+
 function resetPositions() {
     musicFiles.forEach((musicFile, index) => {
         const { x, y } = initialPositions[index];
