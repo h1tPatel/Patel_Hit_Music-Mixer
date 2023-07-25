@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/grid.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gantari:ital,wght@1,500&display=swap" rel="stylesheet">
 </head>
 <body>   
 
@@ -16,35 +19,35 @@
 <main >
 
     <div class="grid-con" >
-        <button class=" l-col-span-4 " id="reset-button">Reset</button>
+        <button class=" col-span-1 m-col-span-2 l-col-span-2 xl-col-span-2" id="reset-button">Reset</button>
   
-    <object data="./images/Name-logo.svg" type="image/svg+xml" class="name-logo l-col-span-4 "></object>
+    <object data="./images/Name-logo.svg" type="image/svg+xml" class="name-logo col-span-1 m-col-span-8 l-col-span-8 xl-col-span-8 "></object>
     
-    <button id="change-background-btn" class="col-span-4">Change Background</button>
+    <button id="change-background-btn" class="m-col-span-2 l-col-span-2 xl-col-span-2">Change Background</button>
     </div>
     <!-- Music files with images -->
     <div class="music-files grid-con">
-        <div class="music-file l-col-start-1 l-col-end-3" draggable="true">
+        <div class="music-file col-span-1 m-col-start-1 m-col-end-3 l-col-start-1 l-col-end-3 xl-col-start-1 xl-col-end-3" draggable="true">
             <img  src="./images/photo1.jpg" alt="Music 1">
             <audio src="./audio/eco-technology-145636.mp3"></audio>
         </div>
-        <div class="music-file l-col-start-5 l-col-end-8" draggable="true">
+        <div class="music-file col-span-1 m-col-start-5 m-col-end-8 l-col-start-5 l-col-end-8 xl-col-start-5 xl-col-end-8" draggable="true">
             <img  src="./images/photo3.jpg" alt="Music 2">
             <audio src="./audio/dark-trap-beat-witches-118012.mp3"></audio>
         </div>
-        <div class="music-file l-col-start-9 l-col-end-11" draggable="true">
+        <div class="music-file col-span-1 m-col-start-9 m-col-end-11 l-col-start-9 l-col-end-11 xl-col-start-9 xl-col-end-11" draggable="true">
             <img  src="./images/photo3.jpg" alt="Music 3">
             <audio src="./audio//eastern-trap-groove-15883.mp3"></audio>
         </div>
-        <div class="music-file l-col-start-3 l-col-end-5" draggable="true">
+        <div class="music-file col-span-1 m-col-start-3 m-col-end-5 l-col-start-3 l-col-end-5 xl-col-start-3 xl-col-end-5" draggable="true">
             <img  src="./images/photo3.jpg" alt="Music 4">
             <audio src="./audio/endless-beauty-main-11545.mp3"></audio>
         </div>
-        <div class="music-file l-col-start-7 l-col-end-9" draggable="true">
+        <div class="music-file col-span-1 m-col-start-7 m-col-end-9 l-col-start-7 l-col-end-9 xl-col-start-7 xl-col-end-9" draggable="true">
             <img  src="./images/photo3.jpg" alt="Music 5">
             <audio src="./audio/where-the-light-is-15702.mp3"></audio>
         </div>
-        <div class="music-file l-col-start-11 l-col-end-13" draggable="true">
+        <div class="music-file col-span-1 m-col-start-11 m-col-end-13 l-col-start-11 l-col-end-13 xl-col-start-11 xl-col-end-13" draggable="true">
             <img  src="./images/photo3.jpg" alt="Music 6">
             <audio src="./audio/tabla_loop_4bars_90bpm-86005.mp3"></audio>
         </div>    
@@ -52,11 +55,11 @@
 
     <!-- Drop zones for music files -->
     <div class="drop-here grid-con">
-        <div class="drop-zone l-col-span-4" id="drop1">
+        <div class="drop-zone col-span-1 m-col-span-4 l-col-span-4 xl-col-span-4" id="drop1">
             <p>Drop here</p>
         </div>
-        <div class="drop-zone l-col-span-4" id="drop2"> <p>Drop here</p></div>
-        <div class="drop-zone l-col-span-4" id="drop3"> <p>Drop here</p></div>
+        <div class="drop-zone col-span-1 m-col-span-4 l-col-span-4 xl-col-span-4" id="drop2"> <p>Drop here</p></div>
+        <div class="drop-zone col-span-1 m-col-start-9 m-col-end-13 l-col-span-4 xl-col-span-4" id="drop3"> <p>Drop here</p></div>
        
     </div>
 
@@ -80,9 +83,9 @@
 </main>
 
 <footer>
-    <div>
-        <h2>How to Use</h2>
-        <p>
+    <div class="grid-con">
+        <h2 class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12 box">How to Use</h2>
+        <p class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12 box" id="rules">
 1. Drag and Drop Music Files:
    - Drag music files from the "Music Files" section and drop them into any of the available drop zones to mix the tracks.
    <br>
