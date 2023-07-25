@@ -89,39 +89,4 @@ function drop(event) {
     draggedItem = null;
 }
 
-// Your existing JavaScript code here
 
-// Add event listener to the "Change Background" button
-const changeBackgroundBtn = document.getElementById('change-background-btn');
-changeBackgroundBtn.addEventListener('click', openModal);
-
-// Add event listener to close the modal when clicking outside the modal content
-const modal = document.getElementById('background-modal');
-modal.addEventListener('click', closeModal);
-
-// Prevent the modal from closing when clicking inside the modal content
-const modalContent = document.querySelector('.modal-content');
-modalContent.addEventListener('click', (event) => event.stopPropagation());
-
-// Function to open the background selection modal
-function openModal() {
-    modal.style.display = 'block';
-}
-
-// Function to close the background selection modal
-function closeModal() {
-    modal.style.display = 'none';
-}
-
-// Add event listeners to each background thumbnail
-const backgroundThumbnails = document.querySelectorAll('.background-thumbnails img');
-backgroundThumbnails.forEach((thumbnail) => {
-    thumbnail.addEventListener('click', changeBackground);
-});
-
-// Function to change the background of the webpage
-function changeBackground(event) {
-    const selectedBackground = event.target.getAttribute('src');
-    document.body.style.backgroundImage = `url(${selectedBackground})`;
-    closeModal(); // Close the modal after selecting the background
-}
