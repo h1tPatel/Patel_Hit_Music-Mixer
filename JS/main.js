@@ -1,12 +1,10 @@
 console.log("JS file is connected")
-// Add event listeners to make the music files draggable
 const musicFiles = document.querySelectorAll('.music-file');
 musicFiles.forEach((musicFile) => {
     musicFile.addEventListener('dragstart', dragStart);
     musicFile.addEventListener('dragend', dragEnd);
 });
 
-// Add event listeners to make the drop zones droppable
 const dropZones = document.querySelectorAll('.drop-zone');
 dropZones.forEach((dropZone) => {
     dropZone.addEventListener('dragover', dragOver);
@@ -16,7 +14,7 @@ dropZones.forEach((dropZone) => {
 });
 
 let draggedItem = null;
-const initialPositions = []; // Array to store initial positions of music files
+const initialPositions = []; 
 const musicFilesContainer = document.querySelector('.music-files');
 
 function dragStart(event) {
@@ -60,20 +58,26 @@ musicFiles.forEach((musicFile) => {
     musicFilesContainer.appendChild(musicFile); 
 });
 
-
 function resetPositions() {
+    
     musicFiles.forEach((musicFile, index) => {
         const { x, y } = initialPositions[index];
         musicFile.style.left = x + 'px';
         musicFile.style.top = y + 'px';
-        musicFilesContainer.appendChild(musicFile); 
-        
-        
+        musicFilesContainer.appendChild(musicFile);
+
         const audio = musicFile.querySelector('audio');
         audio.pause();
-        audio.currentTime = 0; 
+        audio.currentTime = 0;
+    });
+
+    
+    dropZones.forEach((dropZone) => {
+        const dropZoneText = dropZone.querySelector('p');
+        dropZoneText.style.display = 'block'; 
     });
 }
+
 
 dropZones.forEach((dropZone) => {
     dropZone.addEventListener('drop', drop);
