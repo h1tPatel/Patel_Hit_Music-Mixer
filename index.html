@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./CSS/grid.css">
+    <link rel="stylesheet" href="./css/grid.css">
 </head>
 <body>   
 
@@ -13,30 +13,52 @@
     <h1>Music-Mixer</h1>
 </header>
 
-<main class="grid-con">
-    <object data="./images/Name-logo.svg" type="image/svg+xml" class="name-logo"></object>
+<main >
 
+    <div class="grid-con" >
+        <button class=" l-col-span-4 " id="reset-button">Reset</button>
+  
+    <object data="./images/Name-logo.svg" type="image/svg+xml" class="name-logo l-col-span-4 box"></object>
+    
+          <h2 class="l-col-span-4 box">AnyThing</h2>
+    </div>
     <!-- Music files with images -->
-    <div class="music-files">
-        <div class="music-file" draggable="true">
-            <img src="./images/photo1.jpg" alt="Music 1">
+    <div class="music-files grid-con">
+        <div class="music-file l-col-start-1 l-col-end-3" draggable="true">
+            <img  src="./images/photo1.jpg" alt="Music 1">
             <audio src="./audio/bounce-114024.mp3"></audio>
         </div>
-        <div class="music-file" draggable="true">
-            <img src="./images/photo3.jpg" alt="Music 2">
+        <div class="music-file l-col-start-5 l-col-end-8" draggable="true">
+            <img  src="./images/photo3.jpg" alt="Music 2">
             <audio src="./audio/dramatic-music-for-video-vlogs-41-sec-orchestral-hip-hop-beat-149623.mp3"></audio>
         </div>
-        <!-- Add four more music files with images and audio sources -->
+        <div class="music-file l-col-start-9 l-col-end-11" draggable="true">
+            <img c src="./images/photo3.jpg" alt="Music 3">
+            <audio src="./audio/dramatic-music-for-video-vlogs-41-sec-orchestral-hip-hop-beat-149623.mp3"></audio>
+        </div>
+     
+        <div class="music-file l-col-start-3 l-col-end-5" draggable="true">
+            <img  src="./images/photo3.jpg" alt="Music 4">
+            <audio src="./audio/dramatic-music-for-video-vlogs-41-sec-orchestral-hip-hop-beat-149623.mp3"></audio>
+        </div>
+        <div class="music-file l-col-start-7 l-col-end-9" draggable="true">
+            <img  src="./images/photo3.jpg" alt="Music 5">
+            <audio src="./audio/dramatic-music-for-video-vlogs-41-sec-orchestral-hip-hop-beat-149623.mp3"></audio>
+        </div>
+        <div class="music-file l-col-start-11 l-col-end-13" draggable="true">
+            <img c src="./images/photo3.jpg" alt="Music 6">
+            <audio src="./audio/dramatic-music-for-video-vlogs-41-sec-orchestral-hip-hop-beat-149623.mp3"></audio>
+        </div>   
     </div>
 
     <!-- Drop zones for music files -->
-    <div class="drop-here">
-        <div class="drop-zone" id="drop1"></div>
-        <div class="drop-zone" id="drop2"></div>
-        <!-- Add four more drop zones here with unique IDs -->
+    <div class="drop-here grid-con">
+        <div class="drop-zone l-col-span-4" id="drop1"></div>
+        <div class="drop-zone l-col-span-4" id="drop2"></div>
+        <div class="drop-zone l-col-span-4" id="drop3"></div>
+       
     </div>
 
-    <button id="reset-button">Reset</button>
 </main>
 
 <footer></footer>
