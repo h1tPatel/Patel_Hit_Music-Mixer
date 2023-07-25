@@ -51,14 +51,13 @@ function drop(event) {
     draggedItem = null;
 }
 
-// Add event listener to the reset button
+//event listener for reset button
 const resetButton = document.getElementById('reset-button');
 resetButton.addEventListener('click', resetPositions);
 
-// Store initial positions of music files and move them back to the Music Files section
 musicFiles.forEach((musicFile) => {
     initialPositions.push({ x: musicFile.offsetLeft, y: musicFile.offsetTop });
-    musicFilesContainer.appendChild(musicFile); // Move the music files back to the Music Files section
+    musicFilesContainer.appendChild(musicFile); 
 });
 
 
@@ -67,11 +66,62 @@ function resetPositions() {
         const { x, y } = initialPositions[index];
         musicFile.style.left = x + 'px';
         musicFile.style.top = y + 'px';
-        musicFilesContainer.appendChild(musicFile); // Move the music files back to the Music Files section
+        musicFilesContainer.appendChild(musicFile); 
         
-        // Pause the music if it's currently playing
+        
         const audio = musicFile.querySelector('audio');
         audio.pause();
-        audio.currentTime = 0; // Reset the audio playback position to the beginning
+        audio.currentTime = 0; 
     });
+}
+
+dropZones.forEach((dropZone) => {
+    dropZone.addEventListener('drop', drop);
+});
+
+function drop(event) {
+    event.preventDefault();
+    this.appendChild(draggedItem);
+    const audio = draggedItem.querySelector('audio');
+    audio.play();
+    this.classList.remove('drag-over');
+    this.querySelector('p').style.display = 'none'; 
+    draggedItem = null;
+}
+
+// Your existing JavaScript code here
+
+// Add event listener to the "Change Background" button
+const changeBackgroundBtn = document.getElementById('change-background-btn');
+changeBackgroundBtn.addEventListener('click', openModal);
+
+// Add event listener to close the modal when clicking outside the modal content
+const modal = document.getElementById('background-modal');
+modal.addEventListener('click', closeModal);
+
+// Prevent the modal from closing when clicking inside the modal content
+const modalContent = document.querySelector('.modal-content');
+modalContent.addEventListener('click', (event) => event.stopPropagation());
+
+// Function to open the background selection modal
+function openModal() {
+    modal.style.display = 'block';
+}
+
+// Function to close the background selection modal
+function closeModal() {
+    modal.style.display = 'none';
+}
+
+// Add event listeners to each background thumbnail
+const backgroundThumbnails = document.querySelectorAll('.background-thumbnails img');
+backgroundThumbnails.forEach((thumbnail) => {
+    thumbnail.addEventListener('click', changeBackground);
+});
+
+// Function to change the background of the webpage
+function changeBackground(event) {
+    const selectedBackground = event.target.getAttribute('src');
+    document.body.style.backgroundImage = `url(${selectedBackground})`;
+    closeModal(); // Close the modal after selecting the background
 }

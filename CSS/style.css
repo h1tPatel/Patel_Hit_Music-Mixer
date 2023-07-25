@@ -1,9 +1,17 @@
+body
+{
+    background: url(../images/background-def.jpg);
+}
+
 .drop-zone {
     min-height: 100px;
     border: 2px dashed #201d1d;
     border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f8f8;
 }
-
 .music-file {
    
     cursor: grab;
@@ -18,10 +26,48 @@ img {
 #reset-button {
    background-color: red;
 }
-.drop-here {
-text-align: center;
+.drop-zone img {
+    border: 2px solid #201d1d;
+    border-radius: 6px;
 }
+
+.drop-here {
+    text-align: center;
+}
+
 .drop-here p {
     padding-top: 10px;
     opacity: 60%;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    width: 50%;
+}
+
+.background-thumbnails {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.background-thumbnails img {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    cursor: pointer;
 }
