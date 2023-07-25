@@ -1,9 +1,7 @@
 .drop-zone {
     min-height: 100px;
-    border: 2px dashed #ccc;
+    border: 2px dashed #201d1d;
     border-radius: 8px;
-    margin: 5px 0;
-    padding: 10px;
 }
 
 .music-file {
@@ -14,8 +12,8 @@
     margin: 50px;
 }
 img {
-    height: 100px;
-    width: 100px;
+    height: 175px;
+    width: 175px;
 }
 #reset-button {
    background-color: red;
