@@ -1,17 +1,23 @@
+/* backgrond  */
+.hidden {
+    display: none;
+}
 body
 {
-    background: url(../images/background-def.jpg);
+    background: url(../images/background5.jpg);
+    background-size: cover;
 }
-
+/* style for drpe zone  */
 .drop-zone {
     min-height: 100px;
-    border: 2px dashed #201d1d;
+    border: 2px dotted #201d1d;
     border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #f8f8f8;
 }
+/* to make image draggable */
 .music-file {
    
     cursor: grab;
@@ -19,63 +25,69 @@ body
     width: 150px;
     margin: 50px;
 }
+
+/* image size and radius */
 img {
     height: 175px;
     width: 175px;
     border-radius: 50%;
 }
+
 /* Style for the Reset button */
 
 #reset-button {
     padding: 10px 20px;
-    background-color: #5294bf; /* Blue background color */
-    color: #c14040; /* White text color */
+    background-color: #5294bf; 
+    color: #c14040; 
     border: none;
-    border-radius: 30px; /* Rounded button */
+    border-radius: 30px; 
     cursor: pointer;
     font-size: 18px;
     font-weight: bold;
 
-    text-transform: uppercase; /* Convert text to uppercase */
-    letter-spacing: 1px; /* Add spacing between letters */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
-    transition: background-color 0.3s, transform 0.3s; /* Add transitions for background color and scale */
+    text-transform: uppercase; 
+    letter-spacing: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s, transform 0.3s; 
   }
   
   /* Hover effect for the Reset button */
   #reset-button:hover {
-    background-color: #b93939b1; /* Darker blue when hovering */
-    transform: scale(1.05); /* Slightly scale up the button on hover */
+    background-color: #b93939b1; 
+    transform: scale(1.05); 
     color: #fff;
   }
   
-  /* Active (click) effect for the Reset button */
+  /* effect for the Reset button */
   #reset-button:active {
-    background-color: #1f3a93; /* Even darker blue when clicked */
-    box-shadow: none; /* Remove box shadow on click */
+    background-color: #1f3a93; 
+    box-shadow: none; /* Remove box shadow*/
   }
-  
+  /* style for save button */
 #save-btn {
     padding: 10px 20px;
-    background-color: #5294bf; /* Blue background color */
-    color: #c14040; /* White text color */
+    background-color: #5294bf; 
+    color: #c14040; 
     border: none;
-    border-radius: 30px; /* Rounded button */
+    border-radius: 30px; 
     cursor: pointer;
     font-size: 18px;
     font-weight: bold;
-    text-transform: uppercase; /* Convert text to uppercase */
-    letter-spacing: 1px; /* Add spacing between letters */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
-    transition: background-color 0.3s, transform 0.3s; /* Add transitions for background color and scale *//* Add a smooth transition to the background color */
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s, transform 0.3s; 
 }
+
+/* hover effect for save button */
 #save-btn:hover {
-    background-color: #b93939b1; /* Darker blue when hovering */
+    background-color: #b93939b1; 
     transform: scale(1.05); 
     color: #fff;
 }
+/* after click effect */
 #save-btn:active {
-    background-color: #1f3a93; /* Even darker blue when clicked */
+    background-color: #1f3a93; 
     box-shadow: none;
 } 
 .drop-zone img {
